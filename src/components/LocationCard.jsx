@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { MapPin, Clock, Calendar } from 'lucide-react';
 import { useLocaleTime } from '../hooks/useLocaleTime';
 import { getWeatherIcon, getWeatherDesc } from '../utils/weatherDisplay';
+import '../styles/LocationCard.css'
 
 export default function LocationCard({ city, isSelected, onSelect }) {
   const [weather, setWeather] = useState(null);

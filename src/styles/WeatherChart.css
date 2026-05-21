@@ -1,0 +1,20 @@
+.chart-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.chart-svg-element {
+  width: 100%;
+  min-width: 480px;
+  height: auto;
+  overflow: visible;
+}
+
+.chart-loading-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}

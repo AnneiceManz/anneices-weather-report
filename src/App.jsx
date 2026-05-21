@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import { ChevronRight, Thermometer } from 'lucide-react';
-
-// Modules imports
 import LocationCard from './components/LocationCard';
 import WeatherChart from './components/WeatherChart';
 import { CITIES } from './utils/weatherLocationConfig';
 import { formatDateString } from './utils/weatherDisplay';
+import '../src/styles/App.css'
 
 export default function App() {
   const [selectedCity, setSelectedCity] = useState(CITIES[0]);

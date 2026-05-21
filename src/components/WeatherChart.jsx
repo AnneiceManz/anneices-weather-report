@@ -1,3 +1,5 @@
+import '../styles/WeatherChart.css'
+
 export default function WeatherChart({ historicalData, loading }) {
   if (loading) {
     return (
