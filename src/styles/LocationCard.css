@@ -1,8 +1,3 @@
-/* ==========================================================================
-   LOCATION CARD CORE PRESENTATION LAYOUT
-   ========================================================================== */
-
-/* Base Component Button Frame Container */
 .w-full {
   width: 100%;
 }
@@ -65,11 +60,6 @@
   height: 10rem;
 }
 
-/* ==========================================================================
-   MUTUALLY EXCLUSIVE STRUCTURAL UNSELECTED VS SELECTED VARIATIONS
-   ========================================================================== */
-
-/* 1. Normal State (Unselected) */
 .bg-white {
   background-color: #ffffff;
 }
@@ -116,10 +106,6 @@
   transform: scale(1.01);
 }
 
-/* ==========================================================================
-   CHILD PRESENTER TYPOGRAPHY & ICON HOODS
-   ========================================================================== */
-
 .font-bold {
   font-weight: 700;
 }
@@ -154,13 +140,11 @@
   margin-top: 1rem;
 }
 
-/* Local Icon / Typography Adaptive Accents */
 .text-blue-200 { color: #bfdbfe; }
 .text-blue-100 { color: #dbeafe; }
 .text-slate-400 { color: #94a3b8; }
 .text-slate-600 { color: #475569; }
 
-/* Visual Condition Icon Badge Wrapper */
 .p-2 {
   padding: 0.5rem;
 }
@@ -177,7 +161,6 @@
   backdrop-filter: blur(12px);
 }
 
-/* Temperature Metric Readouts */
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -191,7 +174,6 @@
   letter-spacing: -0.025em;
 }
 
-/* Condition Description Badge Pill */
 .font-medium {
   font-weight: 500;
 }
@@ -214,10 +196,6 @@
   background-color: #f1f5f9;
 }
 
-/* ==========================================================================
-   ASYNC DATA EXCEPTION HOOKS (SKELETONS / ERRORS)
-   ========================================================================== */
-
 .h-8 {
   height: 2rem;
 }
@@ -238,7 +216,6 @@
   border-radius: 0.25rem;
 }
 
-/* Smooth loading placeholder pulsing */
 .animate-pulse {
   animation: pulse-kf 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

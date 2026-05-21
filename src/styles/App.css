@@ -1,36 +1,4 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.heart {
-  color: #ff0000;
-}
-
-.small {
-  font-size: 0.75rem;
-} */
-
-/* Container Shell Metrics */
+/* Container Layout */
 .app-container {
   background-color: #f8fafc;
   min-height: 100vh;
@@ -40,45 +8,44 @@
 }
 
 .app-wrapper {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-/* Master Brand Header Row */
+/* Header */
 .app-header {
-  margin-bottom: 2rem;
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.brand-title h1 {
+.app-header h1 {
   font-size: 1.75rem;
   font-weight: 800;
   margin: 0;
   color: #0f172a;
 }
 
-.brand-title p {
+.app-header p {
   font-size: 0.875rem;
   color: #64748b;
   margin: 0.25rem 0 0 0;
 }
 
-/* Dashboard Structural Adaptive Grid Matrix */
+/* Dashboard Layout Grid Matrix */
 .dashboard-grid {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-/* Medium & Large Screens: Transforms layout cleanly into structural side-by-side split screens */
+/* Medium & Large screens: Side-by-side display structure */
 @media (min-width: 768px) {
   .dashboard-grid {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 320px 1fr; /* Fixed sidebar on left, variable chart layout panel on right */
     align-items: start;
   }
 }
@@ -89,7 +56,7 @@
   gap: 0.75rem;
 }
 
-/* Focus Analytical Deep Dive Wrapper Frame */
+/* Focused Analytics Panel Card Wrapper */
 .details-panel {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -98,16 +65,14 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.panel-title-block h2 {
+.panel-header h2 {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  color: #0f172a;
 }
 
-.panel-title-block p {
+.panel-header p {
   font-size: 0.875rem;
   color: #64748b;
   margin: 0.25rem 0 1.5rem 0;
